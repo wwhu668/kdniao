@@ -1,0 +1,16 @@
+{
+    "name": "wwhu/kdniao",
+    "description": "快递鸟API Laravel5",
+    "authors": [
+        {
+            "name": "wwhu668",
+            "email": "wwhu668@163.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Wwhu\\Kdniao": "src"
+        }
+    }
+}
