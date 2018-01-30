@@ -6,6 +6,8 @@ use Illuminate\Support\ServiceProvider;
 
 class KdniaoServiceProvider extends ServiceProvider
 {
+//    protected $defer = true;
+
     /**
      * Bootstrap the application services.
      *
@@ -14,7 +16,7 @@ class KdniaoServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'config/kdniao.php' => config_path('kdniao.php'),
+            __DIR__.'/config/kdniao.php' => config_path('kdniao.php'),
         ]);
     }
 
@@ -29,4 +31,9 @@ class KdniaoServiceProvider extends ServiceProvider
             return new Kdniao();
         });
     }
+
+//    public function provides()
+//    {
+//        return ['kdniao'];
+//    }
 }

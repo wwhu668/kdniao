@@ -1,13 +1,16 @@
 {
     "name": "wwhu/kdniao",
     "description": "快递鸟API Laravel5",
+    "license": "MIT",
     "authors": [
         {
             "name": "wwhu668",
             "email": "wwhu668@163.com"
         }
     ],
-    "require": {},
+    "require": {
+        "php": ">=5.5.9"
+    },
     "autoload": {
         "psr-4": {
             "Wwhu\\Kdniao\\": "src/"
