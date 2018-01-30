@@ -19,6 +19,7 @@ class Kdniao
     {
         $this->EBusinessID = config('kdniao.business_id', env('KDNIAO_EBUSINESS_ID'));
         $this->appKey = config('kdniao.app_key', env('KDNIAO_APP_KEY'));
+        $this->codes = $this->setCodes();
     }
 
     /**
@@ -103,7 +104,7 @@ class Kdniao
         return is_array($data) ? json_encode($data, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) : $data;
     }
 
-    public function setCodes(array $codes)
+    public function setCodes(array $codes = [])
     {
         return $this->codes = array_merge(config('kdniao.codes'), $codes);
     }
